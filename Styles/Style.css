@@ -1,0 +1,94 @@
+/*
+Title: Style
+Authors: Spencer T. Crosland
+Purpose: General Styling for all pages in Master Contol Programs Site
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url(../Images/Styling/Background.png);
+}
+
+/* Fonts */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px #00d0f9;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header{
+    background: url(../Images/Styling/Header.gif)no-repeat center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img{
+    height: 200px;
+    width: 200px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00d0f9;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 5000px;
+    height: 200px; 
+}
+
+/* Navigation */
+nav {
+    background: #00141f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
+    border-top: 3px solid #00d0f9;
+    border-bottom: 5px solid #00d0f9;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    text-shadow: 0px 0px 3px #22a203;
+    transition: background 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    background: url(../Images/Styling/Nav.webp) center/cover no-repeat; 
+    background-size: cover;
+    background-color: #00d0f9;
+    text-shadow: 4px 4px 2px #ff0000;
+}
+
+/* === Home Page === */
+
+/* === About Page === */
+
+/* ==== Games Page ==== */
+
+/* Sabacc Parlor */
+.sabacc_Parlor img {
+    height: 500px;
+    width: 500px;
+}
+
+/* FOOTER */
