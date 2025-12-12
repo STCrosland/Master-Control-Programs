@@ -5,19 +5,16 @@ Purpose: General Styling for all pages in Master Contol Programs Site
 */
 
 body {
-    margin: 0;
     padding: 0;
-    min-height: 100vh;
-
-    background-image: url("../Images/Styling/Background.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 0;
+    background: url(../Images/Styling/Background.png);
+     min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 /* Fonts */
-
+/* Base neon style */
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -25,10 +22,15 @@ h1, h2, h3 {
     letter-spacing: 4px;
     text-align: center;
     margin: 0.5em 0;
+
+    /* Make inside DARKER so the glow doesn't wash it out */
+    color: #0a0a0a;   /* dark interior */
+    -webkit-text-stroke: 2px currentColor;
 }
 
+/* Sharp glow values (much smaller to avoid blur) */
 h1 {
-    color: #000000;
+    color: #000000; 
     -webkit-text-stroke-color: #00ff55;
     text-shadow:
         0 0 3px #00ff55,
@@ -43,7 +45,6 @@ h2 {
         0 0 3px #ff0000,
         0 0 6px #ff0000,
         0 0 10px #ff0000;
-        text-align: left;
 }
 
 h3 {
@@ -53,20 +54,6 @@ h3 {
         0 0 3px #00d0ff,
         0 0 6px #00d0ff,
         0 0 10px #00d0ff;
-    text-align: left;
-
-}
-
-p {
-    color: #ffffff;
-    -webkit-text-stroke-color: #00d0ff;
-    text-shadow:
-        0 0 3px #00ff55,
-        0 0 6px #00d0ff,
-        0 0 10px #ff0000;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 
@@ -76,17 +63,17 @@ header {
     background-size: 100% 300px;
     height: 230px;
     min-width: 1200px;
-    position: relative; /* Important: allows absolute positioning inside */
+    position: relative; 
 }
 
 /* Position the logo */
 .Logo {
     position: absolute;
-    top: 20px;          /* move up or down */
-    left: 20px;         /* move left or right */
-    width: 180px;       /* resize if needed */
+    top: 20px;          
+    left: 20px;         
+    width: 180px;       
     height: auto;
-      border: 5px solid #00d0f9;
+    border: 5px solid #00d0f9;
     border-radius: 20px;
     box-shadow: 0 0 20px #00d0f9;
 }
@@ -125,9 +112,6 @@ nav a:hover {
 }
 
 /* === Home Page === */
-.feature {
-    display: block;
-}
 
 /* === About Page === */
 
@@ -139,27 +123,29 @@ nav a:hover {
     width: 500px;
 }
 
-/* === Websites === */
-.WDD130_Portla_Page img {
+/* === Websites Page === */
+
+.WDD130_Portal_Page img{
+    height: 500px;
+    width: 500px;
     border: 5px solid #00d0f9;
-    border-radius: 15px;
-    box-shadow: 0 0 15px #00ff55;
-    position: absolute;
-    max-height: 500px;
-    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
 }
+
+
 
 /* FOOTER */
 footer {
-    background: ;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 900px;
+    margin: 20px auto 0;
+    width: 90%; 
+    max-width: 900px; 
     text-align: center;
     padding: 15px;
     border: 5px solid #00d0f9;
     border-radius: 20px;
     box-shadow: 0 0 20px #ffffff;
-    color: #32CD32;
-    text-shadow: 1px 1px 3px #ffffff;
+    color: #f2c46e;
+    text-shadow: 4px 4px 2px #ff0000;
+    t;
 }
