@@ -7,13 +7,14 @@ Purpose: General Styling for all pages in Master Contol Programs Site
 body {
     padding: 0;
     margin: 0;
-    background: url(../Images/Styling/Background.png);
+    background: url(../Images/Styling/Background.png) no-repeat;
+    background-size: cover;
      min-height: 100vh;
     display: grid;
     grid-template-rows: auto auto 1fr auto;
 }
 
-/* Fonts */
+/* === Fonts === */
 /* Base neon style */
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
@@ -56,8 +57,17 @@ h3 {
         0 0 10px #00d0ff;
 }
 
+p{
+    color: #ffffff;
+    -webkit-text-stroke-color: #00d0ff;
+    text-shadow:
+        0 0 3px #00ff55,
+        0 0 10px #00d0ff,
+        0 0 6px #ff0000;
+    }
 
-/* Header */
+
+/* === Header === */
 header {
     background: url("../Images/Styling/Header.png") no-repeat center;
     background-size: 100% 300px;
@@ -78,7 +88,7 @@ header {
     box-shadow: 0 0 20px #00d0f9;
 }
 
-/* Navigation */
+/* === Navigation === */
 nav {
     background: url(../Images/Styling/Nav.gif);
     display: flex;
@@ -112,7 +122,21 @@ nav a:hover {
 }
 
 /* === Home Page === */
+.Featured_Projects {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto;              
+    gap: 40px;
+}
+
+/* Make the H1 span all columns */
+.Featured_Projects > h1 {
+    grid-column: 1 / -1;
+}
 /* === About Page === */
 
 /* ==== Games Page ==== */
@@ -146,6 +170,5 @@ footer {
     border-radius: 20px;
     box-shadow: 0 0 20px #ffffff;
     color: #f2c46e;
-    text-shadow: 4px 4px 2px #ff0000;
-    t;
+    text-shadow: 1px 1px 3px #330033;
 }
