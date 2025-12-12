@@ -5,13 +5,19 @@ Purpose: General Styling for all pages in Master Contol Programs Site
 */
 
 body {
-    padding: 0;
     margin: 0;
-    background: url(../Images/Styling/Background.png);
+    padding: 0;
+    min-height: 100vh;
+
+    background-image: url("../Images/Styling/Background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Fonts */
-/* Base neon style */
+
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -19,15 +25,10 @@ h1, h2, h3 {
     letter-spacing: 4px;
     text-align: center;
     margin: 0.5em 0;
-
-    /* Make inside DARKER so the glow doesn't wash it out */
-    color: #0a0a0a;   /* dark interior */
-    -webkit-text-stroke: 2px currentColor;
 }
 
-/* Sharp glow values (much smaller to avoid blur) */
 h1 {
-    color: #000000; /* main color still controls stroke + glow */
+    color: #000000;
     -webkit-text-stroke-color: #00ff55;
     text-shadow:
         0 0 3px #00ff55,
@@ -42,6 +43,7 @@ h2 {
         0 0 3px #ff0000,
         0 0 6px #ff0000,
         0 0 10px #ff0000;
+        text-align: left;
 }
 
 h3 {
@@ -51,6 +53,20 @@ h3 {
         0 0 3px #00d0ff,
         0 0 6px #00d0ff,
         0 0 10px #00d0ff;
+    text-align: left;
+
+}
+
+p {
+    color: #ffffff;
+    -webkit-text-stroke-color: #00d0ff;
+    text-shadow:
+        0 0 3px #00ff55,
+        0 0 6px #00d0ff,
+        0 0 10px #ff0000;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -109,6 +125,9 @@ nav a:hover {
 }
 
 /* === Home Page === */
+.feature {
+    display: block;
+}
 
 /* === About Page === */
 
@@ -120,4 +139,27 @@ nav a:hover {
     width: 500px;
 }
 
+/* === Websites === */
+.WDD130_Portla_Page img {
+    border: 5px solid #00d0f9;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ff55;
+    position: absolute;
+    max-height: 500px;
+    width: auto;
+}
+
 /* FOOTER */
+footer {
+    background: ;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    padding: 15px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ffffff;
+    color: #32CD32;
+    text-shadow: 1px 1px 3px #ffffff;
+}
