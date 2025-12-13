@@ -15,6 +15,15 @@ body {
 }
 
 /* === Fonts === */
+.Text_Wrapper{
+    max-width: 900px;
+    margin: 20px auto;
+    background: rgba(60, 61, 61, 0.85);
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
+
 /* Base neon style */
 h1, h2, h3 {
     font-family: "Oswald", sans-serif;
@@ -132,6 +141,32 @@ nav a:hover {
     gap: 40px;
 }
 
+.Project_One img{
+    height: 500px;
+    width: 500px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
+
+
+.Project_Two img{
+    height: 500px;
+    width: 500px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
+
+.Project_Three img{
+    height: 500px;
+    width: 500px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
+
+
 /* Make the H1 span all columns */
 .Featured_Projects > h1 {
     grid-column: 1 / -1;
@@ -139,22 +174,27 @@ nav a:hover {
 /* === About Page === */
 
 /* ==== Games Page ==== */
-
-/* Sabacc Parlor */
-.sabacc_Parlor img {
-    height: 500px;
-    width: 500px;
-}
-
-/* === Websites Page === */
-
-.WDD130_Portal_Page img{
+.Kessel_Sabacc img{
     height: 500px;
     width: 500px;
     border: 5px solid #00d0f9;
     border-radius: 20px;
     box-shadow: 0 0 20px #22a203;
 }
+
+
+
+.Doctor_Who_Wordle img{
+    height: 500px;
+    width: 500px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
+
+
+
+/* === Websites Page === */
 
 
 
