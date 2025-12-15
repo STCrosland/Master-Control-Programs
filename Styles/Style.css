@@ -185,6 +185,11 @@ nav a:hover {
     gap: 40px;
 }
 
+.Game_Projects > h1 {
+    grid-column: 1 / -1;
+}
+
+
 .Kessel_Sabacc img{
     height: 500px;
     width: 500px;
@@ -206,7 +211,37 @@ nav a:hover {
 
 
 /* === Websites Page === */
+.Website_Projects {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;              
+    gap: 40px;
+}
 
+.Website_Projects > h1 {
+    grid-column: 1 / -1;
+}
+
+
+.WDD130_Portal_Page img {
+    height: 500px;
+    width: 500px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
+
+.Stronghold_Stratagy_guide img{
+    height: 500px;
+    width: 500px;
+    border: 5px solid #00d0f9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #22a203;
+}
 
 
 /* FOOTER */
